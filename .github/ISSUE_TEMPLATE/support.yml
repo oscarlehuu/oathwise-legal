@@ -1,0 +1,40 @@
+name: Oathwise support request
+description: Ask for help without posting personal documents or receipts.
+title: "Support: "
+labels: [support]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        This page is public. Do not include receipts, immigration documents, your Apple Account email or other personal information. We will offer a private follow-up when needed.
+  - type: dropdown
+    id: category
+    attributes:
+      label: Category
+      options:
+        - Purchase or restore
+        - A question or answer looks wrong
+        - Privacy
+        - Other
+    validations:
+      required: true
+  - type: dropdown
+    id: test
+    attributes:
+      label: Test you study for
+      options:
+        - Australia
+        - United States (2025 test)
+        - United States (2008 test)
+        - Not relevant
+  - type: input
+    id: app-version
+    attributes:
+      label: App version
+      placeholder: e.g. 1.0 (1)
+  - type: textarea
+    id: description
+    attributes:
+      label: What happened?
+    validations:
+      required: true
